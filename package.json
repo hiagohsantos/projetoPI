@@ -1,0 +1,32 @@
+{
+  "name": "ProjetoPI",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && babel src --out-dir dist --copy-files",
+    "start": "node src/server.js",
+    "start:dev": "nodemon --exec babel-node src/server.js"
+  },
+  "type": "module",
+  "module": "commonjs",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "chart.js": "^3.8.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "firebase": "^9.8.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "nodemon": "^2.0.18",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.73.0"
+  }
+}
